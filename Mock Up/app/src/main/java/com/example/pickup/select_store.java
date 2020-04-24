@@ -1,5 +1,6 @@
 package com.example.pickup;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -9,8 +10,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 public class select_store extends AppCompatActivity {
+
+    Button btn3;
+    ImageButton testing;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +33,21 @@ public class select_store extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        btn3 = (Button) findViewById(R.id.button3);
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openslogin();
+            }
+        });
+
     }
 
+
+
+    private void openslogin() {
+        Intent openlogin = new Intent (this, login.class);
+        startActivity(openlogin);
+    }
 }

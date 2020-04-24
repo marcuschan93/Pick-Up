@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:chatview="http://schemas.android.com/apk/res-auto"
+    tools:context=".login">
+
+
+    <co.intentservice.chatui.ChatView
+        android:id="@+id/chat_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        chatview:backgroundColor="#FFFFFF"
+        chatview:bubbleBackgroundRcv="#00BCD4"
+        chatview:bubbleBackgroundSend="#2196F3"
+        chatview:bubbleElevation="elevated"
+        chatview:inputBackgroundColor="#FFEB3B"
+        chatview:inputHint="Hello"
+        chatview:inputHintColor="#000000"
+        chatview:inputTextColor="#009688"
+        chatview:inputTextSize="15dp"
+        chatview:inputUseEditorAction="false"
+        tools:layout_editor_absoluteX="199dp"
+        tools:layout_editor_absoluteY="44dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
