@@ -6,40 +6,26 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
-import co.intentservice.chatui.ChatView;
-import co.intentservice.chatui.models.ChatMessage;
-
-public class MainActivity extends AppCompatActivity {
-    private Button storebtn,customerbtn;
+public class ThirdActivity extends AppCompatActivity {
+    private Button next;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_third);
 
-        storebtn = (Button) findViewById(R.id.button);
-        storebtn.setOnClickListener(new View.OnClickListener() {
+        next = (Button) findViewById(R.id.buttonnext2);
+        next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                openLoginActivity();
-
+                openafterthird();
             }
         });
-        customerbtn = (Button) findViewById(R.id.button2);
-        customerbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openthird();
-            }
-        });
-
-
-
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -53,21 +39,13 @@ public class MainActivity extends AppCompatActivity {
 
 
         });
-
-
-
     }
 
-    private void openthird() {
-        Intent third = new Intent(this, ThirdActivity.class);
-        startActivity(third);
+    private void openafterthird() {
+        Intent afterthird = new Intent(this,AfterThirdActivity.class);
+        startActivity(afterthird);
     }
 
-    private void openLoginActivity() {
-        Intent loginbtn = new Intent(this,login.class);
-        startActivity(loginbtn);
-
-    }
     private void openchatbot() {
         Intent chatbot = new Intent(this,chatbotActivity.class);
         startActivity(chatbot);

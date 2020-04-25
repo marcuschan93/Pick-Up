@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="section_array">
+        <item>Meat</item>
+        <item>Drinks</item>
+        <item>Body and Beauty</item>
+        <item>Canned</item>
+        <item>Bulk Dries</item>
+        <item>Pharmacy</item>
+    </string-array>
+
+</resources>
