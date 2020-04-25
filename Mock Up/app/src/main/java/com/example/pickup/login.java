@@ -10,12 +10,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class login extends AppCompatActivity implements View.OnClickListener {
     private ImageView iw;
     private ImageButton costcoobtn,safewaybtn,cvsbtn;
+    private Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +30,7 @@ public class login extends AppCompatActivity implements View.OnClickListener {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Starting Chatbot", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
                 
                 openchatbot();
@@ -50,6 +52,21 @@ public class login extends AppCompatActivity implements View.OnClickListener {
 
         iw = (ImageView) findViewById(R.id.imageView);
 
+        btn = (Button) findViewById(R.id.button10);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                openaftersecond();
+
+            }
+        });
+
+    }
+
+    private void openaftersecond() {
+        Intent aftersecond = new Intent(this, AfterSecondActivity.class);
+        startActivity(aftersecond);
     }
 
     private void openchatbot() {

@@ -9,11 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".chatbotActivity"></activity>
+        <activity android:name=".AfterThirdActivity"></activity>
+        <activity android:name=".chatbotActivity" />
+        <activity android:name=".AfterSecondActivity" />
+        <activity android:name=".FourActivity" />
+        <activity android:name=".ThirdActivity" />
         <activity
             android:name=".login"
             android:label="@string/title_activity_login"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".select_store"
             android:label="@string/title_activity_select_store"

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string-array name="local_stores_array">
+            <item>Trader Joe\'s</item>
+            <item>Safeway</item>
+            <item>Grocery Outlet</item>
+        </string-array>
+</resources>
